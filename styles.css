@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #212120;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 80px auto 10px;
+  max-width: 1920px;
+}
+
+.right {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+.left {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.left textarea {
+  width: fill; 
+}
+
+.left,
+.right {
+  flex: 1;
+  max-width: 45%; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(+100%); }
+  to { transform: translateX(0); }
+}
+
+output, textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding: 8px;
+    margin: 0;
+    background-color: rgb(53, 53, 52);
+    border-color: rgb(187, 187, 187);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    border-bottom-color: rgb(96, 96, 96);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(96, 96, 96);
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-color: rgb(96, 96, 96);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(96, 96, 96);
+    border-top-style: solid;
+    border-top-width: 0px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 69px;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    min-inline-size: min-content;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-bottom: 0px;
+    padding-inline-end: 12px;
+    padding-inline-start: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    resize: vertical;
+}
+
+fieldset {
+  position: relative;
+  border-width: 0.8px;
+  border-color: rgb(96, 96, 96);
+}
+
+legend {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(33, 33, 32);
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: rgb(187, 187, 187);
+  z-index: 1;
+}
+
+.center {
+  position: relative;
+}
+.button-container {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(62, 62, 61);
+  padding: 10px;
+  z-index: 999;
+}
+
+button {
+  display: inline;
+  font-family: Raleway, Verdana;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 19.8px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  color: rgb(149, 184, 6);
+  cursor: pointer;
+  padding: 10px 20px;
+  
+  border-color: rgb(187, 187, 187);
+  border-width: 0.8px;
+  border-radius: 4px;
+  background-color: rgba(65, 70, 44, 0);
+  line-height: normal;
+  width: auto;
+}
+
+.first-word {
+  color: rgb(149, 184, 6);
+}
+
+.first-word {
+  color: rgb(234, 234, 234);
+}
+
+button:hover {
+  background-color: #45a049;
+}

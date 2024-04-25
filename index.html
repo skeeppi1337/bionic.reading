@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bionic reading converter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="button-container">
+  <button onclick="displayOutput()"><span class="first-word">Convert</span> Text</button>
+</div>
+<div class="container">
+  <fieldset class="left">
+    <legend>Input</legend>
+    <textarea id="inputText" name="inputText" rows="1" oninput="adjustTextareaHeight()"></textarea>
+  </fieldset>
+  <fieldset class="right">
+    <legend>Output</legend>
+    <output id="outputText" oninput="adjustTextareaHeight()"></output>
+  </fieldset>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
